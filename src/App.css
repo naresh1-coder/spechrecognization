@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fallback for background */
+}
+
+/* Background Container */
+.bg-container {
+    background-image: url("../../speech-to-text-frontend-main/src/components/assets/9023.jpg_wh1200.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card Styles */
+.app-card {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    color: white;
+    text-align: center;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Applies blur to the background */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Button Styles */
+button {
+    border-radius: 8px;
+    padding: 12px 24px; /* Added padding to ensure proper button text spacing */
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    transition: all 0.3s ease;
+    text-align: center; /* Ensure text is aligned within the button */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: #d1d5db;
+    color: #aaa;
+}
+
+/* Input Focus Styles */
+.input-focus:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Button Specific Styles */
+.stop-listening {
+    background-color: #f56c6c; /* Set a red background color */
+    color: white;
+    border-color: #f56c6c;
+}
+
+.stop-listening:disabled {
+    background-color: #ccc; /* Lighter grey when disabled */
+    color: #888;
+}
+
+.start-listening {
+    background-color: #52c41a; /* Set a green background color */
+    color: white;
+    border-color: #52c41a;
+}
+
+.start-listening:disabled {
+    background-color: #ccc; /* Lighter grey when disabled */
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-card {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .title-text {
+        font-size: 24px;
+    }
+
+    .input-focus {
+        width: 100%;
+    }
+
+    .text-para {
+        font-size: 14px;
+    }
+
+    .bg-container {
+        background-position: top center;
+    }
+
+    /* Button Responsiveness */
+    .button-animation {
+        width: 100%;
+        max-width: 100%; /* Ensures button stretches fully */
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+
+    .start-listening, .stop-listening {
+        font-size: 14px; /* Adjust font size for mobile */
+        padding: 12px 24px; /* Ensure padding is sufficient */
+        width: 100%;
+    }
+
+    /* Adjust width and size of buttons for smaller screens */
+    .ant-btn {
+        font-size: 14px;
+        padding: 12px 24px; /* Adjust padding for proper spacing */
+        width: 100%;
+    }
+}
+
+/* Further Adjustments for Extra Small Screens */
+@media (max-width: 480px) {
+    .title-text {
+        font-size: 20px;
+    }
+
+    .text-para {
+        font-size: 12px;
+    }
+
+    .app-card {
+        padding: 16px;
+    }
+
+    .bg-container {
+        padding: 10px;
+    }
+
+    /* Further Adjustments for Buttons on Extra Small Screens */
+    .start-listening, .stop-listening {
+        padding: 10px 16px; /* Adjust padding for very small screens */
+        font-size: 12px; /* Further reduce font size */
+    }
+}
+
+/* Card Hover Effects */
+.card-animation {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-animation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
