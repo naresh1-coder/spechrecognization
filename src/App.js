@@ -82,7 +82,7 @@ const App = () => {
         >
           <Card className="app-card" bodyStyle={{ padding: "24px 32px" }}>
             <Space direction="vertical" size="large" style={{ width: "100%" }}>
-              <Title level={3} style={{ color: "white" }}>
+              <Title level={3} style={{ color: "#1C325B" }}>
                 Speech to Text
               </Title>
               <Text type="secondary" style={{ color: "#1C325B" }}>
